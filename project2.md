@@ -91,9 +91,54 @@
 
 ![lemp index ](./images/lemp-index.PNG)
 
-## Step4
+## Step5
 
-##  CONFIGURING NGINX TO USE PHP PROCESSOR
+##  TESTING PHP WITH NGINX
+
+`sudo nano /var/www/projectLEMP/info.php`
+![Nano info.php ](./images/nano-info.PNG)
+
+`http://`server_domain_or_IP`/info.php`
+![info page ](./images/info-page.PNG)
+
+## Step6
+
+##  RETRIEVING DATA FROM MYSQL DATABASE WITH PHP
+
+`sudo mysql`
+![info page ](./images/sql-log.PNG)
+
+`mysql> CREATE DATABASE `example_database`;`
+![example database ](./images/example-db.PNG)
+
+`mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
+![example database user](./images/example-user.PNG)
+
+
+`GRANT ALL ON example_database.* TO 'example_user'@'%';`
+![Grant permission](./images/permission.PNG)
+
+`exit`
+
+![Grant permission](./images/exit-db.PNG)
+
+`mysql -u example_user -p`
+![example](./exit-db.PNG)
+
+`mysql> SHOW DATABASES;`
+
+`CREATE TABLE example_database.todo_l`
+
+
+
+
+`mysql> SHOW DATABASES;`
+![database  view](./show-db.PNG)
+
+
+``
+
+
 
 
 
