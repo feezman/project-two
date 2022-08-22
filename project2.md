@@ -60,6 +60,57 @@
 ![mySql exit ](./images/exit.PNG)
 
 
+## Step3
+
+## INSTALLING PHP
+
+`sudo apt install php-fpm php-mysql`
+![php install ](./images/php-install.PNG)
+
+
+## Step4
+
+##  CONFIGURING NGINX TO USE PHP PROCESSOR
+
+`sudo mkdir /var/www/projectLEMP`
+![mkdir projectlemp ](./images/projectlamp.PNG)
+
+`sudo chown -R $USER:$USER /var/www/projectLEMP`
+![mkdir projectlemp ](./images/chown-projectlemp.PNG)
+
+`sudo nano /etc/nginx/sites-available/projectLEMP`
+![vi projectlemp ](./images/vi-projectlemp.PNG)
+
+`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`
+![vi activating nginx ](./images/projectcon.PNG)
+
+`sudo unlink /etc/nginx/sites-enabled/default`
+![vi relaod nginx ](./images/reload-nginx.PNG)
+
+` sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html`
+
+![lemp index ](./images/lemp-index.PNG)
+
+## Step4
+
+##  CONFIGURING NGINX TO USE PHP PROCESSOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
