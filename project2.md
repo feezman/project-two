@@ -123,20 +123,36 @@
 ![Grant permission](./images/exit-db.PNG)
 
 `mysql -u example_user -p`
-![example](./exit-db.PNG)
+![example user](./images/example-sql.PNG)
 
 `mysql> SHOW DATABASES;`
-
-`CREATE TABLE example_database.todo_l`
-
+![example user](./images/database-show.PNG)
 
 
+`create todo list`
+![example user](./images/todo.PNG)
 
-`mysql> SHOW DATABASES;`
-![database  view](./show-db.PNG)
+`INSERT INTO example_database.todo_list (content) VALUES ("My first important item");`
+
+![insert todo](./images/insert-todo.PNG)
+
+`SELECT * FROM example_database.todo_list;`
+
+![insert todo](./images/view-todo.PNG)
+
+` exit`
+![exit todo](./images/exit-sql.PNG)
+
+`nano /var/www/projectLEMP/todo_list.php`
+![exit todo](./images/nano-todo.PNG)
+
+`http://<Public_domain_or_IP>/todo_list.php`
+![exit todo](./images/php-web.PNG)
 
 
-``
+
+
+
 
 
 
